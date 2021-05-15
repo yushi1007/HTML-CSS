@@ -1,4 +1,4 @@
-/* TEXT, COLOR, MARGIN, PADDING */
+/* TEXT, COLOR, MARGIN, PADDING, FLOAT, CLEAR, WIDTH, HEIGHT, POSITION */
 * {
     margin: 0;
     padding: 0;
@@ -37,6 +37,9 @@ h2 {
 
 .author-text {
     font-size: 22px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
 }
 
 .container {
@@ -48,6 +51,7 @@ h2 {
     width: 75%;
     float: left;
     padding-right: 30px;
+    position: relative;
 }
 
 .other-posts {
@@ -62,4 +66,24 @@ h2 {
 
 .author-box img {
     width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    float: left;
+}
+
+.other {
+    margin-bottom: 40px;
+}
+
+.blog-post img {
+    height: 150px;
+    width: auto;
+}
+
+.date {
+    position: absolute;
+    top:10px;
+    /* means there is no distance of the right side parent container and the element */
+    right: 30px;
+    
 }
